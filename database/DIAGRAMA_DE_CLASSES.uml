@@ -1,0 +1,88 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam defaultTextAlignment center
+
+class Usuario {
+  - nome: String
+  - idade: int
+  - pontuacaoTotal: int
+  --
+  +Usuario(nome: String, idade: int)
+  +getNome(): String
+  +setNome(nome: String): void
+  +getIdade(): int
+  +setIdade(idade: int): void
+  +getPontuacaoTotal(): int
+  +setPontuacaoTotal(pontos: int): void
+}
+
+class UsuarioService {
+  - usuarios: List<Usuario>
+  --
+  +UsuarioService()
+  +cadastrarUsuario(usuario: Usuario): void
+  +listarUsuarios(): List<Usuario>
+  +buscarPorNome(nome: String): Usuario
+  +atualizarUsuario(nome: String, novoNome: String, novaIdade: int): boolean
+  +excluirUsuario(nome: String): boolean
+}
+
+class Ranking {
+  - usuarios: List<Usuario>
+  --
+  +Ranking()
+  +adicionarUsuario(usuario: Usuario): void
+  +exibirRanking(): void
+}
+
+class Pergunta {
+  - enunciado: String
+  - alternativas: String[]
+  - respostaCorreta: int
+  --
+  +Pergunta(enunciado: String, alternativas: String[], respostaCorreta: int)
+  +verificarResposta(respostaUsuario: int): boolean
+  +getEnunciado(): String
+  +setEnunciado(enunciado: String): void
+  +getAlternativas(): String[]
+  +setAlternativas(alternativas: String[]): void
+  +getRespostaCorreta(): int
+  +setRespostaCorreta(resposta: int): void
+}
+
+class Desastre {
+  - tipo: String
+  - perguntas: List<Pergunta>
+  --
+  +Desastre(tipo: String)
+  +getTipo(): String
+  +getPerguntas(): List<Pergunta>
+  +adicionarPergunta(pergunta: Pergunta): void
+  +carregarPerguntasDeArquivo(caminho: String): void
+}
+
+class Jogo {
+  - usuario: Usuario
+  - desastre: Desastre
+  - pontuacao: int
+  --
+  +Jogo(usuario: Usuario, desastre: Desastre)
+  +iniciarJogo(scanner: Scanner): void
+}
+
+class MenuPrincipal {
+  +main(args: String[]): void
+}
+
+' Relacionamentos
+Desastre "1" *-- "*" Pergunta
+Ranking "1" *-- "*" Usuario
+UsuarioService "1" *-- "*" Usuario
+Jogo --> Usuario
+Jogo --> Desastre
+MenuPrincipal --> Usuario
+MenuPrincipal --> Desastre
+MenuPrincipal --> Jogo
+MenuPrincipal --> Ranking
+MenuPrincipal --> UsuarioService
+@enduml
