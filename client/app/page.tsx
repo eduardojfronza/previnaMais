@@ -35,7 +35,7 @@ export default function HomePage() {
           >
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
+            <span className="sr-only">Trocar tema</span>
           </Button>
         </div>
 
@@ -44,29 +44,29 @@ export default function HomePage() {
             <div className="mx-auto w-20 h-20 bg-black dark:bg-white rounded-full flex items-center justify-center shadow-lg">
               <Shield className="w-10 h-10 text-white dark:text-black" />
             </div>
-            <CardTitle className="text-3xl font-bold text-gray-900 dark:text-white">Disaster Prevention Game</CardTitle>
+            <CardTitle className="text-3xl font-bold text-gray-900 dark:text-white">Jogo de Prevenção de Desastres</CardTitle>
             <CardDescription className="text-gray-600 dark:text-gray-300 text-lg">
-              Learn how to stay safe during natural disasters through interactive quizzes
+              Aprenda como se manter seguro durante desastres naturais por meio de questionários interativos
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 rounded-xl p-4 flex items-start space-x-3">
               <AlertTriangle className="w-5 h-5 text-gray-600 dark:text-gray-400 mt-0.5 flex-shrink-0" />
               <div className="text-sm text-gray-700 dark:text-gray-300">
-                <p className="font-semibold">Educational Purpose</p>
-                <p>This game teaches essential disaster preparedness skills</p>
+                <p className="font-semibold">Finalidade Educacional</p>
+                <p>Este jogo ensina habilidades essenciais de preparação para desastres</p>
               </div>
             </div>
 
             <div className="space-y-5">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-gray-700 dark:text-gray-300 font-medium">
-                  Your Name
+                  Seu nome
                 </Label>
                 <Input
                   id="name"
                   type="text"
-                  placeholder="Enter your name"
+                  placeholder="Entre com seu nome"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 focus:border-black dark:focus:border-white focus:ring-black/20 dark:focus:ring-white/20"
@@ -75,12 +75,12 @@ export default function HomePage() {
 
               <div className="space-y-2">
                 <Label htmlFor="age" className="text-gray-700 dark:text-gray-300 font-medium">
-                  Your Age
+                  Sua idade
                 </Label>
                 <Input
                   id="age"
                   type="number"
-                  placeholder="Enter your age"
+                  placeholder="Entre com sua idade"
                   value={age}
                   onChange={(e) => setAge(e.target.value)}
                   min="1"
@@ -95,7 +95,7 @@ export default function HomePage() {
               disabled={!name.trim() || !age.trim()}
               className="w-full bg-black hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-black py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Start Learning
+              Começar
             </Button>
           </CardContent>
         </Card>
