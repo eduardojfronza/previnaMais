@@ -1,0 +1,6 @@
+Durante um terremoto, onde você deve se proteger?|Debaixo de uma mesa resistente;Na varanda;No elevador|0
+O que fazer se estiver ao ar livre durante um terremoto?|Ficar longe de prédios, árvores e postes;Se esconder atrás de um carro;Entrar rapidamente em casa|0
+O que você NÃO deve fazer durante um terremoto?|Procurar abrigo;Usar elevadores;Ajudar outras pessoas|1
+Como preparar a casa para terremotos?|Fixar móveis nas paredes;Remover portas internas;Deixar objetos pesados em prateleiras altas|0
+Após um terremoto, o que você deve evitar?|Checar vazamentos de gás;Ligar interruptores elétricos;Buscar ajuda médica se ferido|1
+Qual é a função do "kit terremoto"?|Fazer faxina;Garantir recursos básicos como água e primeiros socorros;Entreter crianças|1

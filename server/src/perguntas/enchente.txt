@@ -1,0 +1,6 @@
+O que fazer ao perceber o nível da água subindo?|Ficar no porão;Subir para um local alto;Tentar atravessar a enchente|1
+O que deve ser evitado durante uma enchente?|Dirigir em áreas alagadas;Desligar a energia elétrica;Ouvir rádio|0
+Como preparar sua casa antes de uma enchente?|Desligar eletricidade e mover móveis para locais altos;Fechar todas as portas e janelas;Manter todos os eletrônicos ligados|0
+Durante uma enchente, qual é o local mais seguro?|Área baixa e coberta;Próximo a postes de luz;Ponto alto e seco|2
+Qual item é essencial em um kit de emergência?|Camiseta extra;Lanterna e pilhas;Guarda-chuva|1
+Por que é perigoso andar na água de enchente?|Pode molhar os sapatos;Pode haver correnteza ou contaminação;A água está muito fria|1
