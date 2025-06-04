@@ -7,9 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Disaster Prevention Game",
-  description: "Learn disaster prevention through interactive quizzes",
-    generator: 'v0.dev'
+  title: "Jogo de Prevenção de Desastres",
+  description: "Aprenda sobre prevenção de desastres por meio de questionários interativos"
 }
 
 export default function RootLayout({
